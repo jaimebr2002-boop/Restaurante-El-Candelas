@@ -98,7 +98,7 @@ const FacebookIcon = ({ size = 24 }: { size?: number }) => (
 );
 
 const Navbar = () => (
-  <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-white/80 backdrop-blur-md">
+  <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-white shadow-md">
     <div className="flex items-center gap-3">
       <img 
         src="https://res.cloudinary.com/dfbsqy5ul/image/upload/v1771864463/49933936_620311541759490_6950325831705034752_n_ijbbns.jpg" 
@@ -162,15 +162,6 @@ const Hero = () => (
         </div>
       </motion.div>
     </div>
-    
-    <motion.div 
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1, duration: 1 }}
-      className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/50 flex flex-col items-center gap-2"
-    >
-      <span className="text-[10px] uppercase tracking-[0.3em]">Deslizar</span>
-    </motion.div>
   </section>
 );
 
@@ -607,7 +598,7 @@ const Footer = () => (
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-hidden">
       <Navbar />
       <Hero />
       <About />

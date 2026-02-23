@@ -15,7 +15,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply font-sans text-brand-dark bg-brand-cream;
+    @apply font-sans text-brand-dark bg-white;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif;
