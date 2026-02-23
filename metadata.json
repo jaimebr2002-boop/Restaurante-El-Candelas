@@ -1,0 +1,7 @@
+{
+  "name": "El Candelas",
+  "description": "El templo de la cuchara en Zaragoza. Cocina tradicional aragonesa con más de 60 años de historia.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
